@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category"
+  ],
+  "window": {
+    "navigationBarTitleText": "mini program",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ddd",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "borderStyle":"black",
+    "selectedColor": "",
+    "backgroundColor": "#f5f5f5",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "HomePage",
+      "iconPath": "asset/index.png",
+      "selectedIconPath": "asset/index_selected.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "Category",
+      "iconPath": "asset/Category.png",
+      "selectedIconPath": "asset/Category_selected.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

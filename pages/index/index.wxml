@@ -1,7 +1,14 @@
-<!--index.wxml-->
-<navigation-bar back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    HomePage
-  </view>
+<image src="/img/miku.jpg" mode="heightFix"></image>
+<scroll-view style="border: lightpink solid 3px; width: 100px; height: 120px;" scroll-y>
+<view style="background-color: lightblue; width: 100px; height: 100px; text-align: center; line-height: 100px;" >陈</view>
+<view style="background-color: lightpink; width: 100px; height: 100px; text-align: center; line-height: 100px;" >俣</view>
+<view style="background-color: lightgreen; width: 100px; height: 100px; text-align: center; line-height: 100px;" >奇</view>
 </scroll-view>
+
+<swiper style="height: 150px;" indicator-dots autoplay="true" interval="1000" circular>
+<swiper-item><view style="text-align: center; line-height: 150px; background-color: lightseagreen;">杜</view></swiper-item>
+<swiper-item><view style="text-align: center; line-height: 150px; background-color: rgb(241, 139, 190);">亚</view></swiper-item>
+<swiper-item><view style="text-align: center; line-height: 150px; background-color: rgb(206, 140, 17);">忠</view></swiper-item>
+</swiper>
+
+<button type="primary" plain>let's fuck</button>

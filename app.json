@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/reserve/reserve",
+    "pages/login/login",
     "pages/index/index",
-    "pages/shop/shop",
+    "pages/reserve/reserve",
+    "pages/contact/contact",
     "pages/category/category"
   ],
   "window": {
@@ -24,7 +25,7 @@
         "selectedIconPath": "asset/index_selected.png"
       },
       {
-        "pagePath": "pages/shop/shop",
+        "pagePath": "pages/contact/contact",
         "text": "商品",
         "iconPath": "asset/shop.png",
         "selectedIconPath": "asset/shop_selected.png"

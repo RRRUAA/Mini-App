@@ -1,6 +1,5 @@
-// pages/shop/shop.js
+// pages/login/login.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -62,5 +61,11 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  goadmin:function(){
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
   }
+ 
 })

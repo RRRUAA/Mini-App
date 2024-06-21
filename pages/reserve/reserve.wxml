@@ -1,115 +1,218 @@
 <swiper style="height: 150px;" indicator-dots autoplay="true" interval="2000" circular>
-<swiper-item><view class="banner"><image src="/img/miku.jpg"></image></view></swiper-item>
-<swiper-item><view class="banner"><image src="/img/moon.jpg"></image></view></swiper-item>
+  <swiper-item>
+    <view class="banner">
+      <image src="/img/miku.jpg"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="banner">
+      <image src="/img/moon.jpg"></image>
+    </view>
+  </swiper-item>
 </swiper>
 
 <view class="nav">
-<view class="nav_main">
-<view class="nav_main_title">位置：</view>
-<picker bindchange="bandpickerchangeplace" value="{{index}}" range="{{placearr}}" >
-<view class="picker">
-{{placearr[index]}}
+  <view class="nav_main">
+    <view class="nav_main_title">位置：</view>
+    <picker bindchange="bandpickerchangeplace" value="{{index}}" range="{{placearr}}">
+      <view class="picker">
+        {{placearr[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="nav_main">
+    <view class="nav_main_title">状态：</view>
+    <picker bindchange="bandpickerchangezt" value="{{index1}}" range="{{ztarr}}">
+      <view class="picker">
+        {{ztarr[index1]}}
+      </view>
+    </picker>
+  </view>
 </view>
-</picker>
+
+<view wx:if="{{index==0}}">
+  <view class="wz_lc">鼎新二楼</view>
+  <view class="zw">
+    <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+      <view class="zw_bar_bh">座位号</view>
+      <view class="zw_bar_bh_sz">1</view>
+      <view class="zw_zt">可预约</view>
+    </view>
+    <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+      <view class="zw_bar_bh">座位号</view>
+      <view class="zw_bar_bh_sz">2</view>
+      <view class="zw_zt">可预约</view>
+    </view>
+    <view class="zw_bar" style="background-color:rgb(223, 168, 168);" wx:if="{{index1!=1}}">
+      <view class="zw_bar_bh">座位号</view>
+      <view class="zw_bar_bh_sz">3</view>
+      <view class="zw_zt">已预约</view>
+    </view>
+    <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+      <view class="zw_bar_bh">座位号</view>
+      <view class="zw_bar_bh_sz">4</view>
+      <view class="zw_zt">可预约</view>
+    </view>
+    <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">5</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">6</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132);" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">7</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">8</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  </view>
 </view>
-<view class="nav_main">
-<view class="nav_main_title">状态：</view>
-<picker bindchange="bandpickerchangezt" value="{{index1}}" range="{{ztarr}}" >
-<view class="picker">
-{{ztarr[index1]}}
-</view>
-</picker>
-</view>
-</view>
-<!-- 1 -->
+
+
+<view wx:if="{{index==1}}">
+<view class="wz_lc">鼎新三楼</view>
 <view class="zw">
-	<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">1</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168)" wx:if="{{index1!=1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">2</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168);" wx:if="{{index1!=1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">3</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">4</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168)" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">5</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">6</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168);" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">7</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">8</view>
+    <view class="zw_zt">可预约</view>
+  </view>
 </view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
 </view>
-<view class="zw_bar" style="background-color:rgb(223, 168, 168);">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">不可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-</view>
-<!-- 2 -->
+
+
+<view wx:if="{{index==2}}">
+<view class="wz_lc">鼎新四楼</view>
 <view class="zw">
-	<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">1</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">2</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132);" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">3</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" wx:if="{{index1!=2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">4</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168)" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">5</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">6</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168);" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">7</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">8</view>
+    <view class="zw_zt">可预约</view>
+  </view>
 </view>
-<view class="zw_bar" style="background-color:rgb(223, 168, 168)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">不可预约</view>
 </view>
-<view class="zw_bar" style="background-color:rgb(223, 168, 168);">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">不可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-</view>
-<!-- 3 -->
+
+
+<view wx:if="{{index==3}}">
+<view class="wz_lc">鼎新五楼</view>
 <view class="zw">
-	<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132);">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-</view>
-<!-- 4 -->
-<view class="zw">
-	<view class="zw_bar" style="background-color:rgb(223, 168, 168)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">不可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(223, 168, 168);">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">不可预约</view>
-</view>
-<view class="zw_bar" style="background-color:rgb(138, 201, 132)">
-<view class="zw_bar_bh">座位号</view>
-<view class="zw_bar_bh_sz">1</view>
-<view class="zw_zt">可预约</view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168)" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">1</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">2</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168);" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">3</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">4</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">5</view>
+    <view class="zw_zt">可预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168)" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">6</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(223, 168, 168);" hidden="{{index1==1}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">7</view>
+    <view class="zw_zt">已预约</view>
+  </view>
+  <view class="zw_bar" style="background-color:rgb(138, 201, 132)" hidden="{{index1==2}}">
+    <view class="zw_bar_bh">座位号</view>
+    <view class="zw_bar_bh_sz">8</view>
+    <view class="zw_zt">可预约</view>
+  </view>
 </view>
 </view>

@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/reserve/reserve",
     "pages/index/index",
-    "pages/category/category",
     "pages/shop/shop",
-    "pages/reserve/reserve"
+    "pages/category/category"
   ],
   "window": {
     "navigationBarTitleText": "厚霖自习室",

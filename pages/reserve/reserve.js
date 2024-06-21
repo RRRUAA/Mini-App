@@ -17,6 +17,9 @@ array:[1,2,3,4]
     this.setData({
       index:e.detail.value
     })
+    if(e.detail.value==0){
+      
+    }
   },
 
   bandpickerchangezt:function(e) {

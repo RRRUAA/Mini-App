@@ -67,3 +67,11 @@
 	text-align: center;
 	font-size: 25rpx;
 }
+
+.wz_lc{
+  line-height: 60rpx;
+  margin: 20rpx 5rpx;
+  padding-left: 10rpx;
+  border-left: 10rpx solid rebeccapurple;
+  font-weight: 600;
+}

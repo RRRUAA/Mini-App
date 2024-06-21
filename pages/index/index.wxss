@@ -8,7 +8,7 @@ page {
   flex: 1;
   overflow-y: hidden;
 }
-button {
+.but {
   color: #090909;
   padding: 0.7em 1.7em;
   font-size: 18px;
@@ -20,7 +20,7 @@ button {
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
-button:active {
+.but:active {
   color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }

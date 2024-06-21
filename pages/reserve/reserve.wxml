@@ -13,18 +13,18 @@
 
 <view class="nav">
   <view class="nav_main">
-    <view class="nav_main_title">位置：</view>
+    <view class="nav_main_title"></view>
     <picker bindchange="bandpickerchangeplace" value="{{index}}" range="{{placearr}}">
       <view class="picker">
-        {{placearr[index]}}
+        位置：{{placearr[index]}}
       </view>
     </picker>
   </view>
   <view class="nav_main">
-    <view class="nav_main_title">状态：</view>
+    <view class="nav_main_title"></view>
     <picker bindchange="bandpickerchangezt" value="{{index1}}" range="{{ztarr}}">
       <view class="picker">
-        {{ztarr[index1]}}
+        状态：{{ztarr[index1]}}
       </view>
     </picker>
   </view>

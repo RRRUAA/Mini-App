@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/reserve/reserve",
     "pages/index/index",
+    "pages/reserve/reserve",
+    
     "pages/shop/shop",
     "pages/category/category"
   ],

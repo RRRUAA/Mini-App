@@ -5,27 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-index:0,
-placearr:['鼎新二楼','鼎新三楼','鼎新四楼','鼎新五楼'],
-index1:0,
-ztarr:['全部','可预约','已预约'],
-array:[1,2,3,4]
+    item: {},
+    hidepopup: true,
+    index: 0,
+    placearr: ['鼎新二楼', '鼎新三楼', '鼎新四楼', '鼎新五楼'],
+    index1: 0,
+    ztarr: ['全部', '可预约', '已预约'],
+    array: [1, 2, 3, 4]
   },
 
-  bandpickerchangeplace:function(e) {
+  bandpickerchangeplace: function (e) {
     console.log(e.detail.value)
     this.setData({
-      index:e.detail.value
+      index: e.detail.value
     })
-    if(e.detail.value==0){
-      
-    }
   },
 
-  bandpickerchangezt:function(e) {
+  bandpickerchangezt: function (e) {
     console.log(e.detail.value)
     this.setData({
-      index1:e.detail.value
+      index1: e.detail.value
+    })
+  },
+
+  onshowpopup() {
+    this.setData({
+      hidepopup: false
     })
   },
 

@@ -2,12 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/reserve/reserve",
-    
     "pages/shop/shop",
     "pages/category/category"
   ],
   "window": {
-    "navigationBarTitleText": "厚霖自习室",
+    "navigationBarTitleText": "羽祈自习室",
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#bbb",
     "enablePullDownRefresh": true,

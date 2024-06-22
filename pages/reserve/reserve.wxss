@@ -37,7 +37,6 @@
 .zw{
 	width: 95%;
 	min-height: 300rpx;
-	/* background-color: lightseagreen; */
 	margin: 0 auto;
 }
 
@@ -45,7 +44,7 @@
 	width:21%;
 	height:200rpx;
 	background-color: rgb(199, 197, 194);
-	box-shadow: 0 0 20px rgb(0 0 0/20%);
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 	border-radius: 10rpx;
 	margin: 30rpx 2%;
 	float: left;
@@ -75,3 +74,4 @@
   border-left: 10rpx solid rebeccapurple;
   font-weight: 600;
 }
+

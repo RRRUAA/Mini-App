@@ -21,13 +21,12 @@ Page({
       title: '释放座位资源',
     })
     setTimeout(function () {
-      wx.showToast({
-        title: '释放成功',
-        duration:1000,
-        icon:'success',
-        mask:true
-      })
      wx.hideLoading()
+     wx.showToast({
+        title: '释放成功',
+        duration:1500,
+        icon:'success',
+      })
    },1500)
   },
   onshowpopup:function() {

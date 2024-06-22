@@ -9,7 +9,8 @@ let data= {
 }
 let userInfo=[{
   account:"admin",
-  password:"123"
+  password:"123",
+  number:"123456789"
 }]
 App({
   getdata(){

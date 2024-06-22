@@ -18,7 +18,7 @@
   margin-top: 50rpx;
   position: absolute;
   margin-left:50rpx;
-  width: 150rpx;
+  width: 500rpx;
   height: 100rpx;
   font-size: 60rpx;
   font-family: Helvetica;
@@ -118,7 +118,7 @@
   margin-left: 30rpx;
 }
 .v1 .v2 .login{
-  width: 550rpx;
+  width: 400rpx;
   height: 80rpx;
   position: absolute;
   margin-top:700rpx;

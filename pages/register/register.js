@@ -15,13 +15,19 @@ Page({
       password2:e.detail.value
     })
   },
+  input4:function(e) {
+    this.setData({
+      number:e.detail.value
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
     account:"",
     password1:"",
-    password2:""
+    password2:"",
+    number:""
   },
 
   /**
@@ -103,12 +109,19 @@ Page({
     if(i==user.length){
       var newuser={
         account:this.data.account,
-        password:this.data.password1
+        password:this.data.password1,
+        number:this.data.number
       }
       user.push(newuser)
       wx.setStorageSync('user', user)
+      
       wx.redirectTo({
         url: '/pages/login/login',
+      })
+      wx.showToast({
+        title: '注册成功',
+        icon:'success',
+        duration:1500
       })
     }
   }

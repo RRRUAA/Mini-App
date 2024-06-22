@@ -8,7 +8,7 @@
         </view>
         <view class="inf_content">
           <text class="user_info">{{Username}}</text>
-          <text class="family_info_ct_phone">联系电话：18844565546</text>
+          <text class="family_info_ct_phone">联系电话：{{number}}</text>
         </view>
       </view>
     </view>
@@ -42,14 +42,9 @@
     </view>
  
     <view class="userItemListView">
-      <view class="my_priview_md" bindtap="bind">
+      <view bind:tap="edit" class="my_priview_md">
         <image class="my_priview" src="/img/mine_fiend.png"></image>
-        <text>个人资料</text>
-        <view class="arrow"></view>
-      </view>
-      <view class="my_priview_md" bindtap="updatepassword">
-        <image class="my_priview" src="/img/mine_fiend.png"></image>
-        <text>修改密码</text>
+        <text>资料修改</text>
         <view class="arrow"></view>
       </view>
       <view class="my_priview_md" bindtap="aboutus" hidden="true">

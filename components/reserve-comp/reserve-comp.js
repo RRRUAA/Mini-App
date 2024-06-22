@@ -53,10 +53,10 @@ Component({
       
           if (res.confirm) {
             App.setData({
-              time:time+=this.data.purchase
+              judge: 'true'
             })
             wx.showToast({
-              title: '购买成功',
+              title: '预定成功',
               duration:1500,
               icon:'success',
               mask:true

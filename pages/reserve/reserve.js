@@ -11,7 +11,11 @@ Page({
     placearr: ['鼎新二楼', '鼎新三楼', '鼎新四楼', '鼎新五楼'],
     index1: 0,
     ztarr: ['全部', '可预约', '已预约'],
-    array: [1, 2, 3, 4]
+    array2: [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
+    array3: [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0],
+    array4: [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
+    array5: [1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1],
+    id: "",
   },
 
   bandpickerchangeplace: function (e) {
@@ -28,9 +32,10 @@ Page({
     })
   },
 
-  onshowpopup() {
+  onshowpopup: function (e) {
     this.setData({
-      hidepopup: false
+      hidepopup: false,
+      // ['array2['+e.currentTarget.dataset.id+']']: 1
     })
   },
 

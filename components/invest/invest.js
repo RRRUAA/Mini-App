@@ -52,9 +52,6 @@ Component({
           }
       
           if (res.confirm) {
-            App.setData({
-              time:time+=this.data.purchase
-            })
             wx.showToast({
               title: '购买成功',
               duration:1500,

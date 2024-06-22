@@ -1,5 +1,9 @@
 // pages/category/category.js
 Page({
+  data: {
+    
+  },
+
   balance:function() {
     var app=getApp()
     wx.showModal({
@@ -17,9 +21,18 @@ Page({
       }
     })
   },
-  logout:function(){
+  logout: function(){
     wx.redirectTo({
       url: '/pages/login/login',
     })
+  },
+  openmyorder: function() {
+    wx.navigateTo({
+      url: '/pages/myorder/myorder',
+    })
+  },
+
+  onShow() {
+    
   }
 })

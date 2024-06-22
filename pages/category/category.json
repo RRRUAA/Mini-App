@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "backgroundTextStyle": "light",
+  "disableScroll":true,
+  "navigationStyle": "custom"
 }

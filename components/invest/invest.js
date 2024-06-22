@@ -52,6 +52,11 @@ Component({
           }
       
           if (res.confirm) {
+
+            let app=getApp()
+            app.updatedata(this.data.purchase)
+            console.log(app.getdata());
+
             wx.showToast({
               title: '购买成功',
               duration:1500,

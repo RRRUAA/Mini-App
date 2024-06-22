@@ -1,15 +1,17 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/reserve/reserve",
     "pages/login/login",
     
     "pages/shop/shop",
-    "pages/contact/contact",
-    "pages/index/index",
-    "pages/category/category"
+    "pages/goods/goods",
+    
+    "pages/category/category",
+    "pages/myorder/myorder"
   ],
   "window": {
-    "navigationBarTitleText": "羽祈自习室",
+    "navigationBarTitleText": "厚霖自习室",
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#bbb",
     "enablePullDownRefresh": true,
@@ -27,7 +29,7 @@
         "selectedIconPath": "asset/index_selected.png"
       },
       {
-        "pagePath": "pages/contact/contact",
+        "pagePath": "pages/goods/goods",
         "text": "商品",
         "iconPath": "asset/shop.png",
         "selectedIconPath": "asset/shop_selected.png"

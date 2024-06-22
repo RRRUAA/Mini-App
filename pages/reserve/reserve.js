@@ -15,7 +15,6 @@ Page({
     array3: [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0],
     array4: [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
     array5: [1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1],
-    id: "",
   },
 
   bandpickerchangeplace: function (e) {
@@ -35,8 +34,15 @@ Page({
   onshowpopup: function (e) {
     this.setData({
       hidepopup: false,
-      // ['array2['+e.currentTarget.dataset.id+']']: 1
     })
+
+    var app=getApp()
+    console.log(app.getdata())
+    if(app.getdata().judge=='true'){
+      this.setData({
+        ['array2['+e.currentTarget.dataset.id+']']: 1
+      })
+    }
   },
 
   /**

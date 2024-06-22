@@ -43,6 +43,9 @@ Component({
       }
     },
     purchaseconfirm:function () {
+
+      let app=getApp()
+      app.startjudge()
       wx.showModal({
         title: '提示',
         content: "确认要购买"+this.data.purchase+"小时时长吗",
@@ -52,9 +55,9 @@ Component({
           }
       
           if (res.confirm) {
-            App.setData({
-              judge: 'true'
-            })
+
+            //将judge置为true
+            app.makejudge()
             wx.showToast({
               title: '预定成功',
               duration:1500,

@@ -34,6 +34,7 @@ App({
     wx.setStorageSync('selectedItem',null)
     wx.setStorageSync('user',null)
     wx.setStorageSync('loginuser',null)
+    wx.setStorageSync('seat',"")
     wx.setStorageSync('user',userInfo)
   },
 

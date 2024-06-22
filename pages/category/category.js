@@ -5,6 +5,28 @@ Page({
     Username:"",
     number:""
   },
+  myappoint:function (params) {
+    var seat=wx.getStorageSync('seat')
+    console.log(seat);
+    if(seat==""){
+      wx.showToast({
+        title: '暂无座位',
+        icon:'error'
+      })
+    }else{
+      console.log(seat);
+      wx.showModal({
+        title: '提示',
+        content: '您的座位是'+seat[0]+'层'+seat[1]+'号',
+        showCancel:false,
+        complete: (res) => {
+          if (res.confirm) {
+            
+          }
+        }
+      })
+    }
+  },
   edit:function () {
    wx.showActionSheet({
      itemList: ['修改电话','修改密码'],

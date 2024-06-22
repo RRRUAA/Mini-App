@@ -5,7 +5,7 @@
       
       <view class="phoneCs">
         <image src="/img/用户.png" class="ph"></image>
-        <input bindinput="input1" placeholder="请输入账号"  type="number"/>
+        <input bindinput="input1" placeholder="请输入账号"  type="text"/>
       </view>
 
       <view class="passwordCs">

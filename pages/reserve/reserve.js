@@ -73,7 +73,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+ 
   },
 
 
@@ -90,7 +90,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      array2: wx.getStorageSync('array2'),
+      array3: wx.getStorageSync('array3'),
+      array4: wx.getStorageSync('array4'),
+      array5: wx.getStorageSync('array5'),
+    })
+ 
   },
 
   /**

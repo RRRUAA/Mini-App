@@ -9,7 +9,7 @@
     "pages/myorder/myorder"
   ],
   "window": {
-    "navigationBarTitleText": "羽祈自习室",
+    "navigationBarTitleText": "厚霖自习室",
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#bbb",
     "enablePullDownRefresh": true,

@@ -38,11 +38,11 @@ Page({
 
     var app=getApp()
     console.log(app.getdata())
-    if(app.getdata().judge=='true'){
+    // if(app.getdata().judge=='true'){
       this.setData({
         ['array2['+e.currentTarget.dataset.id+']']: 1
       })
-    }
+    // }
   },
 
   /**

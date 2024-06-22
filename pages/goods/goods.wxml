@@ -6,7 +6,7 @@
   <view class="info">
     <text class="shop-title">{{item.name}}</text>
     <text>价格：{{item.price}}</text>
-    <view><text>商品信息：{{item.desc}}</text></view>
+    <text>商品信息：{{item.desc}}</text>
     <button type="primary" bindtap="showInputDialog" data-item="{{item}}">点击购买</button>
   </view>
 </view>

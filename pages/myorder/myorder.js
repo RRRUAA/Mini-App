@@ -5,9 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    selectedItem: {
-      
-    }
+    wholeItem: {}
   },
 
   /**
@@ -28,9 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    const value = wx.getStorageSync('selectedItem')
+    const value = wx.getStorageSync('wholeItem')
     this.setData({
-      selectedItem: value
+			wholeItem: value
     })
   },
 

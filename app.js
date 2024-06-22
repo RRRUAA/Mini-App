@@ -1,5 +1,6 @@
 // app.js
 let data= {
+  judge: 'false',
   time:0
 }
 let userInfo=[{
@@ -12,6 +13,16 @@ App({
   },
   updatedata(time){
     data.time+=time;
+  },
+
+  //开始将judge置为false
+  startjudge(){
+    data.judge='false';
+  },
+
+  //将jugdge置为true
+  makejudge(){
+    data.judge='true';
   },
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）

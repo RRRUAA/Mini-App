@@ -1,9 +1,14 @@
 // pages/category/category.js
+var loginuser=wx.getStorageSync('loginuser').account;
 Page({
   data: {
-    
+    Username:"123"
   },
-
+  onLoad(options) {
+    this.setData({
+      Username:loginuser
+    })
+  },
   balance:function() {
     var app=getApp()
     wx.showModal({

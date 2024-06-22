@@ -4,20 +4,24 @@ Page({
     this.setData({
       account:e.detail.value
     })
-    console.log(this.data.account);
   },
   input2:function(e) {
     this.setData({
-      password:e.detail.value
+      password1:e.detail.value
     })
-    console.log(this.data.password);
+  },
+  input3:function(e) {
+    this.setData({
+      password2:e.detail.value
+    })
   },
   /**
    * 页面的初始数据
    */
   data: {
     account:"",
-    password:""
+    password1:"",
+    password2:""
   },
 
   /**
@@ -75,39 +79,38 @@ Page({
   onShareAppMessage() {
 
   },
-  login:function(){
+  register:function(){
     var user=wx.getStorageSync('user')
-    // console.log(user.account);
-    // console.log(user.password);
-    // console.log(this.data.account);
-    // console.log(this.data.password);
-    // console.log(this.data.account==user.account);
-    // console.log(this.data.password==user.password);
-    var i=0
-    for(i;i<user.length;i++){
-    if(this.data.account==user[i].account){
-      if(this.data.password==user[i].password){
-        wx.setStorageSync('loginuser', user[i])
-        console.log(wx.getStorageSync('loginuser'));
-        wx.switchTab({
-          url: '/pages/index/index',
-        })
-        break
-      }else{
-        wx.showToast({
-          title: '密码错误',
-          icon:'error'
-        })
-        break
+    let i=0
+    if(this.data.password1==this.data.password2){
+      for(i;i<user.length;i++){
+        if(user[i].account==this.data.account){
+          console.log(user[i].account);
+          console.log(this.data.account);
+          wx.showToast({
+            title: '用户名已存在',
+            icon:'error'
+          })
+          break
+        }
       }
+    }else{
+      wx.showToast({
+        title: '请确保密码一致',
+        icon:'error'
+      })
     }
-  }
-  if(i==user.length){
-    wx.showToast({
-      title: '账号不存在',
-      icon:'error'
-    })
-  }
+    if(i==user.length){
+      var newuser={
+        account:this.data.account,
+        password:this.data.password1
+      }
+      user.push(newuser)
+      wx.setStorageSync('user', user)
+      wx.redirectTo({
+        url: '/pages/login/login',
+      })
+    }
   }
  
 })

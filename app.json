@@ -2,11 +2,11 @@
   "pages": [
     "pages/login/login",
     "pages/reserve/reserve",
-    "pages/shop/shop",
     "pages/goods/goods",
     "pages/index/index",
     "pages/category/category",
-    "pages/myorder/myorder"
+    "pages/myorder/myorder",
+    "pages/register/register"
   ],
   "window": {
     "navigationBarTitleText": "厚霖自习室",

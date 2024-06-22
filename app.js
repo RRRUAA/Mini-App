@@ -2,6 +2,10 @@
 let data= {
   time:0
 }
+let userInfo=[{
+  account:"admin",
+  password:"123"
+}]
 App({
   getdata(){
     return data
@@ -13,7 +17,10 @@ App({
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function () {
-
+    wx.setStorageSync('selectedItem',null)
+    wx.setStorageSync('user',null)
+    wx.setStorageSync('loginuser',null)
+    wx.setStorageSync('user',userInfo)
   },
 
   /**

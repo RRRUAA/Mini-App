@@ -87,6 +87,7 @@ Page({
     for(i;i<user.length;i++){
     if(this.data.account==user[i].account){
       if(this.data.password==user[i].password){
+        wx.setStorageSync('judge', true)
         wx.setStorageSync('array2', [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1] ),
         wx.setStorageSync('array3', [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0]),
         wx.setStorageSync('array4', [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1]),

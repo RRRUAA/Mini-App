@@ -32,14 +32,16 @@ Page({
         if(users[i].account==user.account){
           users[i].password=user.password
           wx.setStorageSync('user', users)
-          wx.switchTab({
-            url: '/pages/category/category',
-          })
           wx.showToast({
             title: '修改成功',
             icon:'success',
             duration:1500
           })
+
+          wx.switchTab({
+            url: '/pages/category/category',
+          })
+          
           break
         }
       }

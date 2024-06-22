@@ -9,7 +9,8 @@ Page({
     dialogTitle: '填写座位信息',  
     dialogPlaceholder: '请输入座位号',  
     dialogValue: '',
-    selectedItem: [],
+		selectedItem: [],
+		wholeItem: [],
     shopList: [
       {
         "id": 1,
@@ -93,9 +94,10 @@ Page({
 
   showInputDialog: function(event) {
     this.setData({  
-      showModal: true
+			showModal: true,
+			selectedItem: event.target.dataset.item
 		})
-		this.data.selectedItem.push(event.target.dataset.item)
+		
   },  
 
   handleInput: function(e) {  
@@ -105,8 +107,12 @@ Page({
   },  
 
   confirmInput: function() {  
-    // 添加选择的商品列表
-    wx.setStorageSync('selectedItem', this.data.selectedItem)
+		// 添加选择的商品列表
+		this.data.wholeItem.push({
+			'selectedItem': this.data.selectedItem,
+			'seat': this.data.dialogValue
+		})
+    wx.setStorageSync('wholeItem', this.data.wholeItem)
     this.hideModal()
     wx.showToast({
       title: '购买成功'

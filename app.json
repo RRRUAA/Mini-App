@@ -1,9 +1,8 @@
 {
-  "pages": ["pages/login/login",
-    "pages/reserve/reserve",
-    
+  "pages": [
+    "pages/login/login",
     "pages/index/index",
-    
+    "pages/reserve/reserve",
     "pages/goods/goods",
     "pages/category/category",
     "pages/myorder/myorder",

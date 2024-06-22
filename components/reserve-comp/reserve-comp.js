@@ -5,12 +5,12 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    item:{
-      type:Object
+    item: {
+      type: Object
     },
-    hide:{
-      type:Boolean,
-      value:true
+    hide: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -18,55 +18,48 @@ Component({
    * 组件的初始数据
    */
   data: {
-    purchase:5
+    purchase: 5
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    min:function(params) {
+    min: function (params) {
       this.setData({
-        purchase:this.data.purchase-1
+        purchase: this.data.purchase - 1
       })
     },
-    plus:function(params) {
+    plus: function (params) {
       this.setData({
-        purchase:this.data.purchase+1
+        purchase: this.data.purchase + 1
       })
     },
-    hidepopup:function (e) {
-      if(e.target.dataset.canclose){
+    hidepopup: function (e) {
+      if (e.target.dataset.canclose) {
         this.setData({
-        hide:true
-      })
+          hide: true
+        })
       }
     },
-    purchaseconfirm:function () {
-
-      let app=getApp()
-      app.startjudge()
-      wx.showModal({
-        title: '提示',
-        content: "确认要购买"+this.data.purchase+"小时时长吗",
-        complete: (res) => {
-          if (res.cancel) {
-            
-          }
-      
-          if (res.confirm) {
-
-            //将judge置为true
-            app.makejudge()
-            wx.showToast({
-              title: '预定成功',
-              duration:1500,
-              icon:'success',
-              mask:true
-            })
-          }
-        }
-      })
+    purchaseconfirm: function () {
+      if (wx.getStorageSync('judge')==true) {
+        wx.showToast({
+          title: '预定成功',
+          duration: 1500,
+          icon: 'success',
+          mask: true
+        })
+        
+      }
+      if (wx.getStorageSync('judge')==false) {
+        wx.showToast({
+          title: '预定失败',
+          duration: 1500,
+          icon:'error'
+        })
+      }
+      wx.setStorageSync('judge', false);
     }
   }
 })

@@ -1,7 +1,11 @@
 // app.js
 let data= {
-  judge: 'false',
-  time:0
+  // judge: 'false',
+  time:0,
+  array2: [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
+  array3: [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0],
+  array4: [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1],
+  array5: [1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1],
 }
 let userInfo=[{
   account:"admin",
@@ -15,15 +19,13 @@ App({
     data.time+=time;
   },
 
-  //开始将judge置为false
-  startjudge(){
-    data.judge='false';
-  },
+  // startjudge(){
+  //   data.judge='false';
+  // },
 
-  //将jugdge置为true
-  makejudge(){
-    data.judge='true';
-  },
+  // makejudge(){
+  //   data.judge='true';
+  // },
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */

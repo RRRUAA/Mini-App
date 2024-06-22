@@ -2,8 +2,9 @@
 Page({
   data:{
     item:{},
-    hidepopup:true
+    hidepopup:true,
   },
+  
   wait:function () {
     wx.showToast({
       
@@ -20,7 +21,8 @@ Page({
     })
       wx.hideLoading()
     },1500)
-   
+   wx.setStorageSync('judge', true)
+   wx.setStorageSync('seat', '')
   },
   LeaveSeat:function showloading() {
     wx.showLoading({

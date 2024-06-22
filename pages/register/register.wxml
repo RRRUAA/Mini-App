@@ -18,6 +18,11 @@
         <input bindinput="input3" placeholder="请确认密码" type="password"/>
       </view>
 
+      <view class="passwordCs2">
+        <image src="/img/电话.png" class="ps"></image>
+        <input bindinput="input4" placeholder="请输入电话" type="password"/>
+      </view>
+
       <view class="login">
         <button class="btn-dl" type="primary" bindtap="register">注册</button>
       </view>

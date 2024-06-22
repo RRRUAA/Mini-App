@@ -1,12 +1,16 @@
 // pages/category/category.js
-var loginuser=wx.getStorageSync('loginuser').account;
+
 Page({
   data: {
-    Username:"123"
+    Username:"",
+    number:""
   },
   onLoad(options) {
+    var loginuser=wx.getStorageSync('loginuser').account;
+    var loginusern=wx.getStorageSync('loginuser').number;
     this.setData({
-      Username:loginuser
+      Username:loginuser,
+      number:loginusern
     })
   },
   balance:function() {

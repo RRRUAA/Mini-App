@@ -10,7 +10,7 @@
   margin-top: 150rpx;
   left: 50rpx;
   width: 545rpx;
-  height: 900rpx;
+  height: 1200rpx;
   background-color:#fff;
   border-radius: 50rpx;
 }
@@ -27,7 +27,7 @@
   letter-spacing: 2rpx;
 }
 .v1 .v2 .phoneCs{
-  margin-top: 200rpx;
+  margin-top: 150rpx;
   margin-left: 25rpx;
   position: absolute;
   display: flex;
@@ -49,7 +49,7 @@
   margin-left: 30rpx;
 }
 .v1 .v2 .passwordCs{
-  margin-top: 350rpx;
+  margin-top: 250rpx;
   margin-left: 25rpx;
   position: absolute;
   display: flex;
@@ -72,7 +72,7 @@
   margin-left: 30rpx;
 }
 .v1 .v2 .passwordCs1{
-  margin-top: 500rpx;
+  margin-top: 350rpx;
   margin-left: 25rpx;
   position: absolute;
   display: flex;
@@ -94,8 +94,31 @@
   margin-top: 25rpx;
   margin-left: 30rpx;
 }
+.v1 .v2 .passwordCs2{
+  margin-top: 450rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width:600rpx ;
+  height: 90rpx ;
+  border-radius: 50rpx;
+  background-color: rgb(250, 248, 248);
+
+}
+.v1 .v2 .passwordCs2 .ps{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.v1 .v2 .passwordCs2 input{
+  width: 400rpx;
+  font-size: 30rpx ;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+}
 .v1 .v2 .login{
-  width: 600rpx;
+  width: 550rpx;
   height: 80rpx;
   position: absolute;
   margin-top:700rpx;

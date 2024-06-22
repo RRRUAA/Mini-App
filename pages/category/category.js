@@ -5,13 +5,24 @@ Page({
     Username:"",
     number:""
   },
+  edit:function () {
+   wx.showActionSheet({
+     itemList: ['修改电话','修改密码'],
+     success(res){
+       if(res.tapIndex==0){
+         wx.navigateTo({
+           url: '/pages/changenub/changenub',
+         })
+       }else if (res.tapIndex==1){
+         wx.navigateTo({
+           url: '/pages/changepsw/changepsw',
+         })
+       }
+     }
+   })
+  },
   onLoad(options) {
-    var loginuser=wx.getStorageSync('loginuser').account;
-    var loginusern=wx.getStorageSync('loginuser').number;
-    this.setData({
-      Username:loginuser,
-      number:loginusern
-    })
+    
   },
   balance:function() {
     var app=getApp()
@@ -42,6 +53,11 @@ Page({
   },
 
   onShow() {
-    
+    var loginuser=wx.getStorageSync('loginuser').account;
+    var loginusern=wx.getStorageSync('loginuser').number;
+    this.setData({
+      Username:loginuser,
+      number:loginusern
+    })
   }
 })

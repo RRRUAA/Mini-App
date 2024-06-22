@@ -1,11 +1,12 @@
 {
-  "pages": ["pages/login/login",
+  "pages": [
+    "pages/login/login",
     "pages/reserve/reserve",
-    
+    "pages/changepsw/changepsw",
+    "pages/changenub/changenub",
     "pages/index/index",
-    
-    "pages/goods/goods",
     "pages/category/category",
+    "pages/goods/goods",
     "pages/myorder/myorder",
     "pages/register/register"
   ],

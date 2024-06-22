@@ -36,13 +36,40 @@ Page({
       hidepopup: false,
     })
 
-    var app=getApp()
+    var app = getApp()
     console.log(app.getdata())
     // if(app.getdata().judge=='true'){
-      this.setData({
-        ['array2['+e.currentTarget.dataset.id+']']: 1
-      })
     // }
+
+    if (e.currentTarget.dataset.floor == 2) {
+      this.setData({
+        ['array2[' + e.currentTarget.dataset.id + ']']: 1
+      })
+    }
+
+    if (e.currentTarget.dataset.floor == 2) {
+      this.setData({
+        ['array2[' + e.currentTarget.dataset.id + ']']: 1
+      })
+    }
+
+    if (e.currentTarget.dataset.floor == 3) {
+      this.setData({
+        ['array3[' + e.currentTarget.dataset.id + ']']: 1
+      })
+    }
+
+    if (e.currentTarget.dataset.floor == 4) {
+      this.setData({
+        ['array4[' + e.currentTarget.dataset.id + ']']: 1
+      })
+    }
+
+    if (e.currentTarget.dataset.floor == 5) {
+      this.setData({
+        ['array5[' + e.currentTarget.dataset.id + ']']: 1
+      })
+    }
   },
 
   /**

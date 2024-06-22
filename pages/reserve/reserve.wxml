@@ -37,7 +37,7 @@
   <view class="wz_lc">鼎新二楼</view>
   <view wx:for="{{array2}}" wx:for-index="index" wx:for-item="item">
     <view wx:if="{{item==0}}">
-      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="2" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
         <view class="zw_bar_bh">座位号</view>
         <view class="zw_bar_bh_sz">{{index+1}}</view>
         <view class="zw_zt">可预约</view>
@@ -58,7 +58,7 @@
   <view class="wz_lc">鼎新三楼</view>
   <view wx:for="{{array3}}" wx:for-index="index" wx:for-item="item">
     <view wx:if="{{item==0}}">
-      <view class="zw_bar" bindtap="onshowpopup" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="3" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
         <view class="zw_bar_bh">座位号</view>
         <view class="zw_bar_bh_sz">{{index+1}}</view>
         <view class="zw_zt">可预约</view>
@@ -79,7 +79,7 @@
   <view class="wz_lc">鼎新四楼</view>
   <view wx:for="{{array4}}" wx:for-index="index" wx:for-item="item">
     <view wx:if="{{item==0}}">
-      <view class="zw_bar" bindtap="onshowpopup" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="4" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
         <view class="zw_bar_bh">座位号</view>
         <view class="zw_bar_bh_sz">{{index+1}}</view>
         <view class="zw_zt">可预约</view>
@@ -98,9 +98,9 @@
 
 <view wx:if="{{index==3}}">
   <view class="wz_lc">鼎新五楼</view>
-  <view wx:for="{{array2}}" wx:for-index="index" wx:for-item="item">
+  <view wx:for="{{array5}}" wx:for-index="index" wx:for-item="item">
     <view wx:if="{{item==0}}">
-      <view class="zw_bar" bindtap="onshowpopup" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
+      <view class="zw_bar" bindtap="onshowpopup" data-id="{{index}}" data-floor="5" style="background-color:#e8e8e8" wx:if="{{index1!=2}}">
         <view class="zw_bar_bh">座位号</view>
         <view class="zw_bar_bh_sz">{{index+1}}</view>
         <view class="zw_zt">可预约</view>

@@ -1,18 +1,12 @@
 {
   "pages": [
     "pages/login/login",
-<<<<<<< HEAD
     "pages/index/index",
     "pages/reserve/reserve",
     "pages/goods/goods",
-=======
-    "pages/reserve/reserve",
     "pages/changepsw/changepsw",
     "pages/changenub/changenub",
-    "pages/index/index",
->>>>>>> a9b5266376f9017c735a17921a47099997a2ee7f
     "pages/category/category",
-    "pages/goods/goods",
     "pages/myorder/myorder",
     "pages/register/register"
   ],

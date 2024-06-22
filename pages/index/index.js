@@ -3,6 +3,10 @@ Page({
   data:{
     item:{},
     hidepopup:true,
+    array2: wx.getStorageSync('array2'),
+    array3: wx.getStorageSync('array3'),
+    array4: wx.getStorageSync('array4'),
+    array5: wx.getStorageSync('array5'),
   },
   
   wait:function () {
@@ -21,10 +25,14 @@ Page({
     })
       wx.hideLoading()
     },1500)
-   wx.setStorageSync('judge', true)
    wx.setStorageSync('seat', '')
   },
   LeaveSeat:function showloading() {
+    wx.setStorageSync('array2', [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1] ),
+    wx.setStorageSync('array3', [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0]),
+    wx.setStorageSync('array4', [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1]),
+    wx.setStorageSync('array5', [1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1]),
+    wx.setStorageSync('judge', true)
     wx.showLoading({
       title: '释放座位资源',
     })
@@ -41,5 +49,14 @@ Page({
     this.setData({
       hidepopup:false
     })
-  }
+  },
+
+  onShow() {
+    this.setData({
+      array2: wx.getStorageSync('array2'),
+      array3: wx.getStorageSync('array3'),
+      array4: wx.getStorageSync('array4'),
+      array5: wx.getStorageSync('array5'),
+    })
+      },
 })
